@@ -1,5 +1,5 @@
 public class App{
-    static void main (String [] args){
+    public static void main (String [] args){
         bujurSangkar persegi = new bujurSangkar("Kotak", 5);
         lingkaran bulat = new lingkaran("Bunderan", 5);
         persegi.info();
@@ -10,6 +10,9 @@ public class App{
 }
 abstract class bidangDuaDimensi{
     protected String nama;
+    public bidangDuaDimensi(String x){
+        this.nama = x;
+    }
     public void info(){
         System.out.println("Nama: " + nama);
     }
@@ -18,7 +21,7 @@ abstract class bidangDuaDimensi{
 class bujurSangkar extends bidangDuaDimensi{
     protected double sisi;
     public bujurSangkar(String x, double y){
-        this.nama = x;
+        super(x);
         this.sisi = y;
     }
     @Override
@@ -29,7 +32,7 @@ class bujurSangkar extends bidangDuaDimensi{
 class lingkaran extends bidangDuaDimensi{
     protected double jari;
     public lingkaran (String x, double y){
-        this.nama = x;
+        super(x);
         this.jari = y;
     }
     @Override
