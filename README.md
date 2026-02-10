@@ -1,4 +1,4 @@
-Nama : Yeriel Dionisius Fuhensen
+Nama : Yeriel Dionisius Fuhensen  
 NIM : 255150200111039
 
 Latihan 01 tentang class, obyek dan inheritance 
